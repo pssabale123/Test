@@ -1,0 +1,65 @@
+@primary-color: red;
+@sec-color: blue;
+@back-color: bisque;
+@marginVertical: 10px;
+
+body {
+  background-color: aqua;
+}
+
+p {
+  font-size: large;
+}
+
+p a.primary {
+  color: @sec-color;
+}
+
+.btn {
+  background-color: @back-color;
+  color: @primary-color;
+  .roundedborder(10px); //function calling
+}
+.primary-btn:extend(.btn) {
+  //extends means going to add another properties or rules
+  margin: 10px;
+  padding: 5px 10px;
+}
+
+.bordered {
+  border-bottom: solid 1px #000;
+  border-top: dashed 1px #000;
+  color: @primary-color;
+}
+
+h1 {
+  .bordered; //this is called mixing is going to mix the another rules in one rule means properties
+}
+
+.roundedborder(@radius) {
+  ///this is a function we can use in less
+  border-radius: @radius;
+}
+
+.div {
+  margin: @marginVertical 0; // we can add arithemetics also
+}
+div {
+  background-color: lighten(red, 40%); //use inbuild function
+  padding: 100px;
+}
+
+ul#list {
+  background-color: antiquewhite; //we can use nesting to directly apply css
+  list-style: none;
+  li {
+    padding: 20px;
+
+    a {
+      text-decoration: none;
+      &:hover {
+        color: green;
+      }
+    }
+  }
+}

@@ -1,0 +1,52 @@
+body {
+  background-color: blanchedalmond;
+  margin: 0;
+  padding: 0;
+}
+
+#header h1 {
+  color: green;
+  font-size: 40px;
+  text-align: center;
+  border: solid blueviolet;
+  border-width: thin;
+  background-color: aqua;
+  border-radius: 30px;
+}
+
+#container #header p {
+  color: rgb(250, 69, 99);
+  font-size: 30px;
+  text-align: center;
+}
+
+.blog-post {
+  width: 50%;
+  height: 200px;
+  border: solid;
+  border-width: thin;
+  margin: 10px auto;
+  background-color: aliceblue;
+  padding: 20px;
+  border-radius: 20px;
+}
+.blog-post:hover {
+  background-color: white;
+}
+
+.blog-post h2 {
+  font-size: 30px;
+  color: hotpink;
+  text-align: center;
+  width: 200px;
+  font-style: oblique;
+}
+.blog-post p,
+em {
+  font-size: 19px;
+}
+#footer {
+  width: 300px;
+  height: 100px;
+  float: right;
+}

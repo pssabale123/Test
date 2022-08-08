@@ -1,0 +1,49 @@
+body {
+  background-color: aqua;
+}
+p {
+  font-size: large;
+}
+p a.primary {
+  color: blue;
+}
+.btn,
+.primary-btn {
+  background-color: bisque;
+  color: red;
+  border-radius: 10px;
+}
+.primary-btn {
+  margin: 10px;
+  padding: 5px 10px;
+}
+.bordered {
+  border-bottom: solid 1px #000;
+  border-top: dashed 1px #000;
+  color: red;
+}
+h1 {
+  border-bottom: solid 1px #000;
+  border-top: dashed 1px #000;
+  color: red;
+}
+.div {
+  margin: 10px 0;
+}
+div {
+  background-color: #ffcccc;
+  padding: 100px;
+}
+ul#list {
+  background-color: antiquewhite;
+  list-style: none;
+}
+ul#list li {
+  padding: 20px;
+}
+ul#list li a {
+  text-decoration: none;
+}
+ul#list li a:hover {
+  color: green;
+}

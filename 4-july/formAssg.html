@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>form</title>
+
+    <link rel="stylesheet" type="text/css" href="form.css" />
+  </head>
+  <body bgcolor="#C0C0C0">
+    <h1>Form</h1>
+    <fieldset class="field">
+      <form>
+        <div class="maindiv">
+          <div class="col1">
+            <label for="name">Name :</label>
+          </div>
+
+          <div class="col2">
+            <input type="text" class="col2F" id="name" />
+          </div>
+
+          <div class="col1">
+            <label for="email">Email :</label>
+          </div>
+
+          <div class="col2">
+            <input type="email" class="col2F" id="email" />
+          </div>
+
+          <div class="col1">
+            <label for="pass">Password :</label>
+          </div>
+
+          <div class="col2">
+            <input type="password" id="pass" />
+          </div>
+
+          <div class="col1">
+            <label for="mob">Mob no:</label>
+          </div>
+          <div class="col2">
+            <input type="tel" id="mob" />
+          </div>
+
+          <div class="col1">
+            <label for="dob">D.O.B :</label>
+          </div>
+
+          <div class="col2">
+            <input type="date" id="dob" />
+          </div>
+
+          <div class="col1">
+            <label for="addr">Address</label>
+          </div>
+          <div class="col2">
+            <textarea cols="52" id="addr"></textarea>
+          </div>
+
+          <div class="col1">
+            <label>Gender : </label>
+          </div>
+          <div class="col2">
+            <label for="male">Male</label>
+            <input type="radio" name="gender" id="male" />
+            <label for="female">Female</label>
+            <input type="radio" name="gender" id="female" />
+          </div>
+
+          <div class="col1">
+            <label>Subject : </label>
+          </div>
+
+          <div class="col2">
+            <input type="checkbox" id="py" />
+            <label for="py">Python</label>
+
+            <input type="checkbox" id="java" />
+            <label for="java">JAVA</label>
+
+            <input type="checkbox" id="javascript" />
+            <label for="javascript">Javascript</label>
+
+            <input type="checkbox" id="php" />
+            <label for="php">PHP</label>
+          </div>
+
+          <div class="col1">
+            <label for="city">Choose a city : </label>
+          </div>
+          <div class="col2">
+            <select name="City" id="city">
+              <option value="">Pune</option>
+              <option value="">Mumbai</option>
+              <option value="">Banglore</option>
+              <option value="">Hydrabad</option>
+            </select>
+          </div>
+
+          <div style="margin-top: 40px; float: right">
+            <input type="button" id="btn" value="Submit" />
+          </div>
+        </div>
+      </form>
+    </fieldset>
+
+    <table class="table">
+      <tr>
+        <th>Name</th>
+        <th>Email</th>
+        <th>Mobile no</th>
+        <th>Address</th>
+        <th>Gender</th>
+        <th>Subject</th>
+        <th>city</th>
+      </tr>
+      <tr>
+        <td>Sachin</td>
+        <td>sachin@gmail.com</td>
+        <td>7689787745</td>
+        <td>Kolhapur</td>
+        <td>Male</td>
+        <td>JAVA</td>
+        <td>hydrabad</td>
+      </tr>
+      <tr>
+        <td>riya</td>
+        <td>riya@gmail.com</td>
+        <td>9889787745</td>
+        <td>solapur</td>
+        <td>Female</td>
+        <td>Python</td>
+        <td>Pune</td>
+      </tr>
+    </table>
+  </body>
+</html>

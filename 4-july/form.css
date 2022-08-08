@@ -1,0 +1,73 @@
+h1 {
+  margin-top: 20px;
+  margin-left: 50vh;
+}
+
+.field {
+  background-color: aquamarine;
+  margin: auto;
+  width: 600px;
+  padding: 40px 80px 40px 80px;
+}
+
+form {
+  width: 100%;
+}
+
+.col1 {
+  display: inline-block;
+  width: 20%;
+  margin-bottom: 12px;
+}
+
+.col2 {
+  display: inline-block;
+  width: 70%;
+  margin-bottom: 8px;
+}
+.col2F {
+  width: 400px;
+  padding: 4px;
+}
+
+#name:focus,
+#email:focus,
+#mob:focus,
+#dob:focus,
+#pass:focus,
+#addr:focus {
+  background-color: rgba(224, 224, 142, 0.836);
+}
+
+#btn {
+  border: 1px;
+  padding: 10px;
+
+  background-color: rgb(82, 209, 56);
+  color: rgb(10, 10, 10);
+  box-shadow: 0px 8px 5px 0px rgb(46, 44, 43);
+}
+
+#btn:hover {
+  background-color: grey;
+  color: white;
+}
+
+.table {
+  margin: auto;
+  margin-top: 30px;
+  background-color: bisque;
+  color: black;
+}
+.table,
+th,
+td {
+  border: 1px solid;
+  border-collapse: collapse;
+}
+
+table th,
+td {
+  width: 120px;
+  text-align: center;
+}

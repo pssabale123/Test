@@ -1,0 +1,59 @@
+$back-color: aqua;
+$color: burlywood;
+
+body {
+  margin: 0px;
+  padding: 0px;
+  background-color: $back-color; //variable of sass
+}
+
+div {
+  margin: 0px;
+  padding: 0px;
+  background-color: $color;
+}
+
+div#list {
+  //this is nesting
+  padding: 20px;
+  ul {
+    list-style: none;
+    li {
+      display: inline-block;
+      padding: 20px;
+      a {
+        text-decoration: none;
+        &:hover {
+          color: green;
+        }
+      }
+    }
+  }
+}
+
+@mixin text {
+  //create mixin
+  font-size: 28px;
+  color: brown;
+  background-color: antiquewhite;
+}
+
+#para {
+  @include text; // include mixin
+  em {
+    color: blue;
+  }
+}
+
+.btn-basic {
+  padding: 20px;
+  margin: 10px;
+}
+.btn-background {
+  @extend .btn-basic;
+  color: red;
+}
+
+#btn {
+  @extend .btn-background;
+}

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>grid</title>
+
+    <style>
+      .item-1 {
+        grid-area: header;
+      }
+      .item-2 {
+        grid-area: main;
+      }
+      .item-3 {
+        grid-area: menu;
+      }
+      .item-4 {
+        grid-area: right;
+      }
+      .item-5 {
+        grid-area: footer;
+      }
+
+      #container-grid {
+        display: grid;
+        grid-template-areas:
+          "header header header header header header"
+          "menu main main main right right"
+          "menu footer footer footer footer footer";
+        gap: 10px;
+        background-color: brown;
+        padding: 10px;
+      }
+
+      #container-grid div {
+        background-color: aqua;
+        padding: 20px 0;
+        text-align: center;
+      }
+
+      .num-1 {
+        grid-area: one;
+      }
+      .num-2 {
+        grid-area: two;
+      }
+      .num-3 {
+        grid-area: three;
+      }
+      .num-4 {
+        grid-area: four;
+      }
+      .num-5 {
+        grid-area: five;
+      }
+      .num-6 {
+        grid-area: six;
+      }
+      .num-7 {
+        grid-area: sevan;
+      }
+      .num-8 {
+        grid-area: eight;
+      }
+
+      #number {
+        margin-top: 30px;
+        display: grid;
+
+        /* grid-template-columns: auto auto auto auto; */
+
+        grid-template-areas:
+          "one one two two three three "
+          "four five five five five six "
+          "six sevan sevan seven eight eight";
+        gap: 10px;
+        padding: 20px;
+        background-color: bisque;
+      }
+
+      #number div {
+        background-color: yellow;
+        padding: 20px 0;
+        text-align: center;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div id="container-grid">
+      <div class="item-1">header</div>
+      <div class="item-2">main</div>
+      <div class="item-3">left</div>
+      <div class="item-4">right</div>
+      <div class="item-5">footer</div>
+    </div>
+
+    <div id="number">
+      <div class="num-1">1</div>
+      <div class="num-2">2</div>
+      <div class="num-3">3</div>
+      <div class="num-4">4</div>
+      <div class="num-5">5</div>
+      <div class="num-6">6</div>
+      <div class="num-7">7</div>
+      <div class="num-8">8</div>
+    </div>
+  </body>
+</html>
